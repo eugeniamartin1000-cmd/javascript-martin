@@ -121,3 +121,67 @@ h1 {
   padding-right: 10px;
   border-radius: 5px;
 }
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #E1E1E0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+
+  &.completada {
+    background-color: #f9fbe7;
+
+    .texto-tarea {
+      color: #999;
+      text-decoration: line-through;
+    }
+
+    .completar-btn {
+      background-color: #fdd835;
+    }
+  }
+
+  .completar-btn {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .texto-tarea {
+    font-size: 1rem;
+    color: #333;
+    flex-grow: 1;
+  }
+
+  .eliminar-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #e53935;
+    cursor: pointer;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #c62828;
+    }
+  }
+}

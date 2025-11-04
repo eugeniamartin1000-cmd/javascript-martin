@@ -56,7 +56,7 @@ function renderTareas(filtro = "todas") {
       // Botón eliminar
       const btnEliminar = document.createElement("button");
       btnEliminar.className = "eliminar-btn";
-      btnEliminar.textContent = "🗑️";
+      btnEliminar.textContent = "Eliminar";
       btnEliminar.addEventListener("click", () => {
         tareas.splice(index, 1);
         renderTareas(filtroActual);

@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="listas de tareas y actividades para realizar de manera organizada">
-    <title>Tares- TO-DO list</title>
-
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="CSS/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tares - TO-DO list</title>
+  <link rel="stylesheet" href="css/main.css" />
 </head>
-
 <body>
 
-  
   <div class="container-todo">
     <h1>Lista de Tareas</h1>
-    <input type="text" id="nueva-tarea" placeholder="Escribí tu tarea">
-    <button id="add-task">Añadir tarea</button>
-    <ul id="task-list"></ul>
+    <form id="formTarea">
+      <input type="text" id="nueva-tarea" placeholder="Escribí tu tarea" required />
+      <button type="submit">Añadir tarea</button>
+    </form>
   </div>
 
-<!-- LINK JS -->
-<script src="JS/main.js"></script>
-</body>
+  <div class="tabs">
+    <button class="tab active" data-filter="todas">Todas</button>
+    <button class="tab" data-filter="completada">Completadas</button>
+    <button class="tab" data-filter="acompletar">A completar</button>
+  </div>
 
+  <ul id="taskList"></ul>
+
+  <script src="JS/main.js"></script>
+</body>
 </html>

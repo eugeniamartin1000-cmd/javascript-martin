@@ -1,0 +1,83 @@
+body {
+  background-color: #F9F9F9;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40pt;
+  margin-left: 10px;
+}
+
+.nueva-tarea {
+  background-color: #DBD8CE;
+  border: none;
+  box-shadow: 0;
+  border-radius: 18px;
+  margin-left: 10px;
+  height: 40px;
+  width: 400px;
+  text-align: justify;
+  padding-left: 20px;
+}
+
+.add-task {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #C9B0DE;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabs {
+  display: flex;
+  justify-content: left;
+  gap: 2rem;
+  border-bottom: 2px solid #ccc;
+  margin-top: 20px;
+  padding-bottom: 0.5rem;
+  margin-left: 10px;
+}
+.tabs .tab {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  width: 150px;
+}
+.tabs .tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.completar-btn {
+  margin-left: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -7,28 +7,43 @@ body{
 
 h1 {
     font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 40pt;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
-.nueva-tarea{
+.new-task{
     background-color: #DBD8CE;
     border: none;
     box-shadow: 000000;
     border-radius: 18px;
-    margin-left: 10px;
+    margin-left: 15px;
     height: 40px;
     width: 400px;
     text-align: justify;
     padding-left: 20px;
 }
 
+.add{
+  background-color: #C9B0DE;
+  height: 40px;
+  width: 200px;
+  margin-left: 20px;
+  border-radius: 18px;
+  border-style:  none;
+  color: #F9F9F9;
+  font-weight: 300;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #AE9DBB;
+  }
+}
+
 .add-task {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem; // espacio entre texto e ícono
   background-color: #C9B0DE;
   color: white;
   border: none;
@@ -50,7 +65,7 @@ h1 {
   margin-top: 20px;
   padding-bottom: 0.5rem;
   margin-left: 10px;
-
+ 
   .tab {
     background: none;
     border: none;
@@ -60,7 +75,7 @@ h1 {
     position: relative;
     padding: 0.5rem 0;
     cursor: pointer;
-    width:150px;
+    width:300px;
 
     &.active::after {
       content: "";
@@ -77,12 +92,32 @@ h1 {
 
 .completar-btn {
   margin-left: 1rem;
-  background-color: #4caf50;
+  background-color:none;
   color: white;
-  border: none;
+  border: black;
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.contador-all{
+  background-color: #F4A67F;
+  width: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.contador{
+  background-color: #89E6A7;
+  width: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
 }

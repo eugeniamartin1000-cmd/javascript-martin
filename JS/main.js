@@ -93,5 +93,3 @@ tabs.forEach(tab => {
   });
 });
 
-// Inicializar
-renderTareas

@@ -1,43 +1,40 @@
-body{
-    background-color: #F9F9F9;
+body {
+  background-color: #F9F9F9;
 }
 
-
-//titulo
-
-h1 {
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 40pt;
-    margin-left: 15px;
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 25pt;
+  margin-left: 15px;
 }
 
-.new-task{
-    background-color: #DBD8CE;
-    border: none;
-    box-shadow: 000000;
-    border-radius: 18px;
-    margin-left: 15px;
-    height: 40px;
-    width: 400px;
-    text-align: justify;
-    padding-left: 20px;
+.new-task {
+  background-color: #DBD8CE;
+  border: none;
+  box-shadow: 0;
+  border-radius: 18px;
+  margin-left: 15px;
+  height: 40px;
+  width: 400px;
+  text-align: justify;
+  padding-left: 20px;
 }
 
-.add{
+.add {
   background-color: #C9B0DE;
   height: 40px;
   width: 200px;
   margin-left: 20px;
   border-radius: 18px;
-  border-style:  none;
+  border-style: none;
   color: #F9F9F9;
   font-weight: 300;
   cursor: pointer;
+}
 
-  &:hover{
-    background-color: #AE9DBB;
-  }
+.add:hover {
+  background-color: #AE9DBB;
 }
 
 .add-task {
@@ -55,8 +52,6 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
-//segmented control
-
 .tabs {
   display: flex;
   justify-content: left;
@@ -65,34 +60,34 @@ h1 {
   margin-top: 20px;
   padding-bottom: 0.5rem;
   margin-left: 10px;
- 
-  .tab {
-    background: none;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #333;
-    position: relative;
-    padding: 0.5rem 0;
-    cursor: pointer;
-    width:300px;
+}
 
-    &.active::after {
-      content: "";
-      position: absolute;
-      bottom: -0.5rem;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background-color: black;
-      border-radius: 2px;
-    }
-  }
+.tabs .tab {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  width: 300px;
+}
+
+.tabs .tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
 }
 
 .completar-btn {
   margin-left: 1rem;
-  background-color:none;
+  background-color: none;
   color: white;
   border: black;
   border-radius: 50%;
@@ -102,7 +97,7 @@ h1 {
   cursor: pointer;
 }
 
-.contador-all{
+.contador-all {
   background-color: #F4A67F;
   width: 20px;
   padding-top: 5px;
@@ -112,7 +107,7 @@ h1 {
   border-radius: 5px;
 }
 
-.contador{
+.contador {
   background-color: #89E6A7;
   width: 20px;
   padding-top: 5px;
@@ -141,47 +136,49 @@ h1 {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease;
-
-  &.completada {
-    background-color: #f9fbe7;
-
-    .texto-tarea {
-      color: #999;
-      text-decoration: line-through;
-    }
-
-    .completar-btn {
-      background-color: #fdd835;
-    }
-  }
-
-  .completar-btn {
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 50%;
-    border: 2px solid #000;
-    background-color: transparent;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: background-color 0.3s ease;
-  }
-
-  .texto-tarea {
-    font-size: 1rem;
-    color: #333;
-    flex-grow: 1;
-  }
-
-  .eliminar-btn {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    color: #e53935;
-    cursor: pointer;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: #c62828;
-    }
-  }
 }
+
+.task.completada {
+  background-color: #f9fbe7;
+}
+
+.task.completada .texto-tarea {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.task.completada .completar-btn {
+  background-color: #fdd835;
+}
+
+.task .completar-btn {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease;
+}
+
+.task .texto-tarea {
+  font-size: 1rem;
+  color: #333;
+  flex-grow: 1;
+}
+
+.task .eliminar-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #e53935;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.task .eliminar-btn:hover {
+  color: #c62828;
+}
+
+

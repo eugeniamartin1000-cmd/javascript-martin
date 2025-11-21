@@ -7,40 +7,33 @@
   <link rel="stylesheet" href="CSS/main.css" />
 </head>
 <body>
+  <h2 id="list-title">Lista de tareas</h2>
 
-  <div class="container-todo">
-    <h1>Lista de Tareas</h1>
-    <form id="formTarea">
-      <input type="text" class="new-task" id="nueva-tarea" placeholder="Escribí tu tarea" required />
-      <button class="add" type="submit">Añadir tarea</button>
-    </form>
-  </div>
+  <form id="formTarea">
+  <input id="nueva-tarea" class="new-task" type="text" required placeholder="Nueva tarea">
+  <select id="prioridad-tarea">
+    <option value="alta">Alta</option>
+    <option value="media">Media</option>
+    <option value="baja">Baja</option>
+  </select>
+  <button type="submit" class="add">Añadir</button>
+  </form>
+
 
   <div class="tabs">
-   <button class="tab active" data-filter="todas">
-    Todas <span class="contador-all" id="contador-todas">0</span>
-   </button>
-   <button class="tab" data-filter="completada">
-    Completadas <span class="contador" id="contador-completadas">0</span>
-   </button>
-   <button class="tab" data-filter="acompletar">
-    A completar <span class="contador" id="contador-acompletar">0</span>
-   </button>
+    <button class="tab active" data-filter="todas">
+      Todas <span id="contador-todas" class="contador-all">0</span>
+    </button>
+    <button class="tab" data-filter="acompletar">
+      Por hacer <span id="contador-acompletar" class="contador">0</span>
+    </button>
+    <button class="tab" data-filter="completada">
+      Completadas <span id="contador-completadas" class="contador">0</span>
+    </button>
   </div>
 
-
-  <ul id="taskList"></ul>
-
-  <script src="JS/main.js"></script>
-</body>
-</html>
-
-
-
-
-
-  <ul id="taskList"></ul>
-
+    <ul id="taskList"></ul>
+  
   <script src="JS/main.js"></script>
 </body>
 </html>

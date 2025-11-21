@@ -2,10 +2,10 @@ body {
   background-color: #F9F9F9;
 }
 
-h1 {
+h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 30pt;
+  font-size: 25pt;
   margin-left: 15px;
 }
 
@@ -32,6 +32,7 @@ h1 {
   font-weight: 300;
   cursor: pointer;
 }
+
 .add:hover {
   background-color: #AE9DBB;
 }
@@ -60,6 +61,7 @@ h1 {
   padding-bottom: 0.5rem;
   margin-left: 10px;
 }
+
 .tabs .tab {
   background: none;
   border: none;
@@ -71,6 +73,7 @@ h1 {
   cursor: pointer;
   width: 300px;
 }
+
 .tabs .tab.active::after {
   content: "";
   position: absolute;
@@ -134,16 +137,20 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease;
 }
+
 .task.completada {
   background-color: #f9fbe7;
 }
+
 .task.completada .texto-tarea {
   color: #999;
   text-decoration: line-through;
 }
+
 .task.completada .completar-btn {
   background-color: #fdd835;
 }
+
 .task .completar-btn {
   width: 1.2rem;
   height: 1.2rem;
@@ -154,11 +161,13 @@ h1 {
   flex-shrink: 0;
   transition: background-color 0.3s ease;
 }
+
 .task .texto-tarea {
   font-size: 1rem;
   color: #333;
   flex-grow: 1;
 }
+
 .task .eliminar-btn {
   background: none;
   border: none;
@@ -167,8 +176,11 @@ h1 {
   cursor: pointer;
   transition: color 0.2s ease;
 }
+
 .task .eliminar-btn:hover {
   color: #c62828;
 }
+
+
 
 /*# sourceMappingURL=main.css.map */
